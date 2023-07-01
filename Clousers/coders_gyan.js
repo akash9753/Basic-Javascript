@@ -26,26 +26,53 @@
 // update();
 
 //--------------------------------------
-const shoppingCart=()=>{
-    let count = 0;
-    const changeCount = (value) =>{
-        count = value;
-    }
-    return {
-        add:(v)=>{
-            changeCount(count +v)
+// const shoppingCart=()=>{
+//     let count = 0;
+//     const changeCount = (value) =>{
+//         count = value;
+//     }
+//     return {
+//         add:(v)=>{
+//             changeCount(count +v)
+//         },
+//         remove:(v)=>{
+//             changeCount(count -v)
+//         },
+//         cart:()=>{
+//             return count;
+//         }
+//     }
+// }
+// const res = shoppingCart()
+// res.add(1)
+// res.add(1)
+// res.add(1)
+// res.remove(2)
+// console.log(res.cart());
+//------------------------------------------------
+const useState = (initialState) => {
+      let state =initialState;
+
+      const setState = (v) =>{
+         state = v;
+      }
+      const getState=()=>{
+           return state;
+      }
+      return [getState,setState];
+}
+
+const counter = () =>{
+    const [count,setCount] = useState(0);
+    return{
+        click(){
+          setCount(5);
         },
-        remove:(v)=>{
-            changeCount(count -v)
-        },
-        cart:()=>{
-            return count;
+        render(){
+           console.log(`value :${count()}`);
         }
     }
 }
-const res = shoppingCart()
-res.add(1)
-res.add(1)
-res.add(1)
-// res.remove(2)
-console.log(res.cart());
+const res = counter();
+res.click();
+res.render();
