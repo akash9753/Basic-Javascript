@@ -1,0 +1,48 @@
+PRIMITIVE           NON-PRIMITIVE                 promise object represent the evantual           this keyword Ruel 
+number                 object                     completion or failure of an                     1. new keyword => this will point to empty object
+string                 Array                          asynhronous operation                       2. default binding => calling function in global context                
+boolen                                            3 states                                        3. implecit binding => calling function with object
+undefined                                         pending fullfilled rejected                     4. explicit binding call, apply | bind(hard binding)
+null                                              -----------------------------                   bind method return a function by attaching a object to
+bigint                                            CALLBACK is a function is passed                variable   
+symbol                                            to another function as an argument              call method takes arguemnt seprately
+-------------------------------------             CALLBACK make sure thata fun is not             apply method takes arguemnt as an array
+let           const            var                going to run befire a task is completed         ---------------------------------------------------------
+modify                        modify              but will run after the task is completed              Regular                        Arrow                                    
+block         block           global               ----------------------------------                                          
+cant redeclared               redeclared          PURE FUNCTION does not modify any              regular function are hoisted   arrow fun have lexical this scope                                          
+ES1                           introdice ES6       external varibale                                                             cant call using new keword                           
+cant          cant            allows duplicate    --------------------------------	                                        do not have argument binding                     		
+      declarations must be initialized.           ES6 Feature                                                                   cant use as construction function
+-----------------------------------------------   1.let and const keyword                          ---------------------------------------------------------
+ways of creating obj                              2.Arrow Function                                 shallow copy                   Deep copy
+1.object cosructor                                3.classes                                        Object.assign for object       JSON.stringyfy() JSON.parse()
+2.object create method                            4.promises                                       spread operator                if function inside object
+3.objaect literal syntax                          5.modules                                        object inside object           lodash library
+4.function constructor                            -----------------------------                    -----------------------------------------------------------
+5.function constructor with prototype                                                                 rest                                spread
+------------------------------------------------                                                  must be the last parameter           converting an array into list
+we can use call() apply() bind() methods to tie a                                                 rest parameter converts all the      of item
+function into an object and call the function as if it                                            item into an array
+belonged to that object.code                                                                      used in a called function            in calling function                                            
+-----------------------------------------------                                                   ---------------------------------------------------------------
+clousers => inner fun can access variables declared
+inside outer function even when outer function destroyed
+inner function can still make use of these  vaiables 
+or parameters of the outer function
+-----------------------------------------------
+Hoisting => is a javascipt default behaviour of
+moving declaration to the top
+----------------------------------------------
+Event propagation
+when an event occurs ona DOM element that event does 
+not entirely occur on just one element
+1.capturing face
+2.target face
+3.bubbling face
+-----------------------------------------------
+event delegation
+it handel event efficiently
+intead of adding event listner to each
+and every similar element. can add it to parent ele
+----------------------------------------------

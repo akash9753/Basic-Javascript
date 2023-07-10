@@ -1,0 +1,50 @@
+react                             uncontrolled     controlled           COMPONENT are independent and reusable             store is an object which provides the state of the app
+opensource js library              ref              onChange            bits of code. they serves the same purpose         reducer => function which takes 2 parameter
+dev user interface                by DOM        handled by react        as js function but work in isolation               state and action always return a state, reducers are listner
+--------------------             ------------------------------         and return html.                                   we write logic in reducer
+feature                            props            state               --------------------------------------             Action => are plain javascript object {type:increment}              
+serverside rendering              immutable         mutable             PURE COMONENT if it renders the same               dispatch => send action to the reducer, 
+--------------------       change in child compo    cant                same output for the same state and props           dispature is the only way to trigger a state change in redux   
+advantages              accessed by child compo     cant                                                                   ------------------------------------------------------------
+v DOM                    stateless have props       cant                    
+SEO friendly             ---------------------------------------        -------------------------------
+Reusable compo                        HOOKS                                  TYPES OF HOOKS
+------------------               use state and lifecycle                         useState() 
+liitations                       3 face                                          Effect()  performing side effect
+not complete framwork           mounting                                         Context() common data
+jsx                             unmounting                                       useRef() accesing dom ele
+---------------                  updating                                        memo()  recomputing,                    
+useState                         Rules only at top level                                               
+built in react hook              call the hooks only from func compo             CallBack()
+having state behavoiur   ---------------------------------------                 Reducer() complex state logic
+in fun compo                   CUSTOM HOOKS                                -------------------------------
+--------------                 start with USE keyword                      props,properties,shorthand,immutable
+key                            cant used inside class                      -----------------------------------                  
+string attribute               can replace HOCs                              life Cycle Methods Of React
+ using list of elements        --------------------------                    1.getDefaultProps() getInitialState()
+key identify which ele         strict mode                                   2.componentWillMount() => executed just before rendring used to show a loader
+added chenged removed      identifying compo with unsafe lifecycle           3.constructor()
+---------------              ----------------------------                    4.getDerivedStateFromProps()               
+JSX                           styling react compo                            5.render()
+javascript XML                 1.inline Styling                              6.componentDidMount() => its run after render method only once basic purpose is calling APIS
+write HTMl inside JS           2.JS Object                                   7.componentWillReceiveProps() => componentWillRecieveProps() is invoked as soon as the props are recieved from parent class before                         
+-------------                  3.css stylesheet                              8.shouldComponentUpdate() => used for optimizing the performance and to increase the responsiveness
+class       function           4.css module                                  9.componentWillUpdate() => manipulate the component just before it receives new props or state used in animation
+            plain javascript  --------------------------                     10.getSnapshotBeforeUpdate()   
+            function           compo lifecycle class component               11.render() 
+                                  1.mounting face                            12.componentDidupdate()  its triggred just after our component updated , it takes two argument 1st previuos props 2nd prev state
+rendor                               render                                  13.componentWillUnmount()  for cleanup this methods just basically triggred just before component beign removed from the dom or 
+method                             componeentDIDMount                                                   (cancel api calls, timer)                                               
+                                  2.updating face
+lifecycle   run top to             componentDidupdate()                      -------------------------------------
+methods      bottom               3.Unmounting face                           Dom
+                                componentWillUnmount()                        virtual
+           easily used       ----------------------------                     representaion of real DOM
+             Hooks                    HOC                                     diffing algorithm
+---------------------           is a fun takes a compo return                 blueprint of real dom         
+                                  a compo                                     diffing algorithm
+                                for abstraction                               ineffecient updating
+                            ----------------------------
+
+         
+
