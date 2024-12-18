@@ -10,3 +10,6 @@ call stack : bottom of the stack there is global excecution context
              
 
 ---------------------------------------------------------------------
+
+var is the implicit type of variable when a variable is declare without var, let or const keywords
+
